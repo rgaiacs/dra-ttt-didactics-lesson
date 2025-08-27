@@ -1,4 +1,7 @@
 # pixi environments
 .pixi
 
+# Quarto
 /.quarto/
+index_files/
+index.html
