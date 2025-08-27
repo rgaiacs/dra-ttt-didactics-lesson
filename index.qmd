@@ -1,7 +1,200 @@
 ---
 title: "Teaching by Making Mistakes"
+author: "Raniere Gaia Costa da Silva"
+date: 2025-09-02
+format: revealjs
+bibliography: references.bib
 ---
 
-## Quarto
+## Agenda
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+| Start time | Activity |
+| --- | --- |
+| 10:00 | Introduction |
+| 10:15 | Example 1 |
+| 10:30 | Break |
+| 10:45 | Example 2 |
+| 11:00 | Build your own example |
+| 11:15 | Break |
+| 11:30 | Share your own example |
+| 11:45 | Lunch |
+
+## Introduction
+
+Learning involves organise **new** knowledge [@how-learning-works].
+One way for us to "visualise" how knowledge is organise is using a mind map.
+
+## Apple and Cherry
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[![](./img/apple.jpg)](https://www.pexels.com/photo/red-and-orange-apple-fruit-102104/)
+
+
+Photo by [mali maeder](https://www.pexels.com/@mali/) from Pexels.
+:::
+
+::: {.column width="50%"}
+[![](./img/cherry.jpg)](https://www.pexels.com/photo/red-cherry-fruit-109274/)
+
+Photo by [Lisa](https://www.pexels.com/@fotios-photos/) from Pexels.
+:::
+
+::::
+
+## Mind Map (1)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Apple))
+    fruit
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Cherry))
+    fruit
+```
+:::
+
+::::
+
+## Mind Map (2)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Apple))
+    fruit
+    red
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Cherry))
+    fruit
+    red
+```
+:::
+
+::::
+
+## Mind Map (3)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Apple))
+    fruit
+    red
+    sweet
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Cherry))
+    fruit
+    red
+    sweet
+```
+:::
+
+::::
+
+
+## Mind Map (4)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Apple))
+    fruit
+    red
+    sweet
+    January to December
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Cherry))
+    fruit
+    red
+    sweet
+    May to July
+```
+:::
+
+::::
+
+## Mind Map (5)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Apple))
+    fruit
+    red
+    sweet
+    January to December
+    cuttable
+```
+:::
+
+::: {.column width="50%"}
+```{mermaid}
+mindmap
+  root((Cherry))
+    fruit
+    red
+    sweet
+    May to July
+    uncuttable
+```
+:::
+
+::::
+
+## Mistakes
+
+Mistakes also contributes to someone's personal mind map / knowledge.
+
+As a instructor, we can design the lesson to also include sections were the instructor makes mistakes.
+
+## Example 1
+
+## Break
+
+## Example 2
+
+## Build your own example
+
+## Break
+
+## Share your own example
+
+## Lunch
+
+## References
+
+::: {#refs}
+:::
