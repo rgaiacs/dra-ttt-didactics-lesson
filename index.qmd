@@ -182,6 +182,42 @@ As a instructor, we can design the lesson to also include sections were the inst
 
 ## Example 1
 
+This first example is based on Software Carpentry's "[Version Control with Git](https://swcarpentry.github.io/git-novice/)".
+
+## Mistake 1.1
+
+I like to teach `git init` before `git config` because `git` will show
+
+```
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+```
+
+This allows me to help learners to read the output they get in the terminal.
+
+## Mistake 1.2
+
+I like to "forget" a closing single quote `'` the first time that I use `git commit` because I will end up with
+
+```
+$ git commit -m 'First commit
+>
+```
+
+This allows me to remember students that `>` is a indicator that the shell is expecting a close token.
+
+## Mistake 1.3
+
+I like to make a typo the second time that I use `git commit` because it will allow me to mention `--amend` that is a question that learners always make.
+
 ## Break
 
 ## Example 2
