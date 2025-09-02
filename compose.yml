@@ -22,7 +22,16 @@ services:
         source: example-2/bob/
         target: /root/
 
-  xargs:
+  ubuntu:
+    image: ubuntu:25.10
+    entrypoint: "tail -f /dev/null"
+    working_dir: /root/
+    volumes:
+      - type: bind
+        source: example-3/
+        target: /root/
+
+  alpine:
     image: alpine:3.22
     entrypoint: "tail -f /dev/null"
     working_dir: /root/
