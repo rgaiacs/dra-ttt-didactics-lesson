@@ -13,13 +13,15 @@ bibliography: references.bib
 | 10:00 | Introduction |
 | 10:15 | Example 1 |
 | 10:30 | Break |
-| 10:45 | Example 2 |
-| 11:00 | Build your own example |
+| 10:40 | Example 2 & 3 |
+| 10:55 | Build your own example |
 | 11:15 | Break |
 | 11:30 | Share your own example |
 | 11:45 | Lunch |
 
 ## Introduction
+
+Knowledge is acquired in many forms [@how-learning-works]. We have evidence that some forms are more efficient than others, for example, hands-on exercise is more efficient than watch a video.
 
 Learning involves organise **new** knowledge [@how-learning-works].
 One way for us to "visualise" how knowledge is organise is using a mind map.
@@ -51,7 +53,7 @@ Photo by [Lisa](https://www.pexels.com/@fotios-photos/) from Pexels.
 ```{mermaid}
 mindmap
   root((Apple))
-    fruit
+    red
 ```
 :::
 
@@ -59,7 +61,7 @@ mindmap
 ```{mermaid}
 mindmap
   root((Cherry))
-    fruit
+    red
 ```
 :::
 
@@ -73,8 +75,8 @@ mindmap
 ```{mermaid}
 mindmap
   root((Apple))
-    fruit
     red
+    sweet
 ```
 :::
 
@@ -82,8 +84,8 @@ mindmap
 ```{mermaid}
 mindmap
   root((Cherry))
-    fruit
     red
+    sweet
 ```
 :::
 
@@ -97,9 +99,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Apple))
-    fruit
     red
     sweet
+    fruit
 ```
 :::
 
@@ -107,9 +109,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Cherry))
-    fruit
     red
     sweet
+    fruit
 ```
 :::
 
@@ -124,9 +126,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Apple))
-    fruit
     red
     sweet
+    fruit
     January to December
 ```
 :::
@@ -135,9 +137,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Cherry))
-    fruit
     red
     sweet
+    fruit
     May to July
 ```
 :::
@@ -152,9 +154,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Apple))
-    fruit
     red
     sweet
+    fruit
     January to December
     cuttable
 ```
@@ -164,9 +166,9 @@ mindmap
 ```{mermaid}
 mindmap
   root((Cherry))
-    fruit
     red
     sweet
+    fruit
     May to July
     uncuttable
 ```
@@ -178,7 +180,9 @@ mindmap
 
 Mistakes also contributes to someone's personal mind map / knowledge.
 
-As a instructor, we can design the lesson to also include sections were the instructor makes mistakes.
+As a instructor, we can design the lesson to also include sections were the instructor makes mistakes **or** directs the learner to a mistake to expand the learner's knowledge.
+
+**All** mistakes **must** be made in a safe and risk free environment!
 
 ## Example 1
 
@@ -220,15 +224,113 @@ I like to make a typo the second time that I use `git commit` because it will al
 
 ## Break
 
+10 minutes. We would return at 10:40.
+
 ## Example 2
+
+This second example is based on Software Carpentry's "[The Unix Shell](https://swcarpentry.github.io/shell-novice/)".
+
+## While-loop in Bash
+
+When explaining the while-loop in Bash, the first example would be something like
+
+```bash
+for file in *; do echo $file; done
+```
+
+```
+Australia.txt
+Colombia.txt
+Ireland.txt
+Morocco.txt
+Rwanda.txt
+```
+
+## Mistake 2
+
+As a exercise, I would propose learners to remove the files in the directory knowing that
+
+```bash
+for file in *; do echo $file; done
+```
+
+```
+Costa Rica.txt
+New Zealand.txt
+San Marino.txt
+The Bahamas.txt
+United Kingdom.txt
+```
+
+## Mistake 2 - Solution
+
+Learners that replace `echo` with `rm` will encounter a error like
+
+```
+rm: can't remove 'Costa': No such file or directory
+```
+
+A tip for the learners is to use quotes.
+
+Learners that try a single quote, `'`, will encounter the error
+
+```
+rm: can't remove '$file': No such file or directory
+```
+
+Learners that try a double quote, `"`, will find the solution to the exercise.
+
+## Example 3
+
+This third example is would fit more in a **advanced** Software Carpentry's "[The Unix Shell](https://swcarpentry.github.io/shell-novice/)".
+
+## `xargs`
+
+`xargs` is a programm found in the UNIX system used to pass the output of one program as arguments to another program. `xargs` can be used in some cases to replace a while-loop.
+
+First, I have students running
+
+```bash
+cat steps.txt | xargs echo
+```
+
+and
+
+```bash
+cat steps.txt | xargs --delimiter=\n echo
+```
+
+in the machine.
+
+## Mistake 3
+
+As a exercise, users will have to re-run
+
+```bash
+cat steps.txt | xargs --delimiter=\n echo
+```
+
+in a third-party environment. The third-party environment is configured so that learners will find the error
+
+```
+xargs: unrecognized option: delimiter=n
+```
 
 ## Build your own example
 
+Working in pairs. Think of a mistake that you could introduce in a lesson that you taught or are planning to teach.
+
 ## Break
+
+15 minutes. We would return at 11:30.
 
 ## Share your own example
 
+We would like to hear what your examples are.
+
 ## Lunch
+
+1 hour for lunch. We will return at 12:45.
 
 ## References
 
